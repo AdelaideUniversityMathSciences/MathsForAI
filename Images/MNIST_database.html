@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>MNIST database - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"1d7963fa-b811-4f5a-8052-cb587ff9b6e2","wgCSPNonce":false,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"MNIST_database","wgTitle":"MNIST database","wgCurRevisionId":1071064522,"wgRevisionId":1071064522,"wgArticleId":40267442,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description matches Wikidata","Artificial intelligence","Datasets in computer vision"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"MNIST_database","wgRelevantArticleId":40267442,"wgIsProbablyEditable":true,
+"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":-1}}},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":20000,"wgNoticeProject":"wikipedia","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgULSCurrentAutonym":"English","wgEditSubmitButtonLabelPublish":true,"wgCentralAuthMobileDomain":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgWikibaseItemId":"Q17069496","wgGENewcomerTasksGuidanceEnabled":true,"wgGEAskQuestionEnabled":false,"wgGELinkRecommendationsFrontendEnabled":false};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading",
+"ext.cite.styles":"ready","skins.vector.styles.legacy":"ready","jquery.tablesorter.styles":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.wikimediaBadges":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.tablesorter","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.centralauth.centralautologin","ext.popups","ext.uls.compactlinks","ext.uls.interface","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1i9g4",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cjquery.tablesorter.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.38.0-wmf.22"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="729"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png"/>
+<meta property="og:image:width" content="800"/>
+<meta property="og:image:height" content="486"/>
+<meta property="og:image:width" content="640"/>
+<meta property="og:image:height" content="389"/>
+<meta property="og:title" content="MNIST database - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/MNIST_database"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=MNIST_database&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/MNIST_database"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-MNIST_database rootpage-MNIST_database skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading">MNIST database</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Database of handwritten digits</div>
+<div class="thumb tright"><div class="thumbinner" style="width:322px;"><a href="/wiki/File:MnistExamples.png" class="image"><img alt="MNIST sample images" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/27/MnistExamples.png/320px-MnistExamples.png" decoding="async" width="320" height="194" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/27/MnistExamples.png/480px-MnistExamples.png 1.5x, //upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png 2x" data-file-width="594" data-file-height="361" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:MnistExamples.png" class="internal" title="Enlarge"></a></div>Sample images from MNIST test dataset</div></div></div><p>The <b>MNIST database</b> (<i>Modified <a href="/wiki/National_Institute_of_Standards_and_Technology" title="National Institute of Standards and Technology">National Institute of Standards and Technology</a> database</i><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>) is a large <a href="/wiki/Database" title="Database">database</a> of handwritten digits that is commonly used for <a href="/wiki/Training_set" class="mw-redirect" title="Training set">training</a> various <a href="/wiki/Image_processing" class="mw-redirect" title="Image processing">image processing</a> systems.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> The database is also widely used for training and testing in the field of <a href="/wiki/Machine_learning" title="Machine learning">machine learning</a>.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> It was created by "re-mixing" the samples from NIST's original datasets.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup> The creators felt that since NIST's training dataset was taken from American <a href="/wiki/United_States_Census_Bureau" title="United States Census Bureau">Census Bureau</a> employees, while the testing dataset was taken from <a href="/wiki/Americans" title="Americans">American</a> <a href="/wiki/High_school" class="mw-redirect" title="High school">high school</a> students, it was not well-suited for machine learning experiments.<sup id="cite_ref-LeCun_7-0" class="reference"><a href="#cite_note-LeCun-7">&#91;7&#93;</a></sup> Furthermore, the black and white images from NIST were <a href="/wiki/Normalization_(image_processing)" title="Normalization (image processing)">normalized</a> to fit into a 28x28 pixel bounding box and <a href="/wiki/Spatial_anti-aliasing" title="Spatial anti-aliasing">anti-aliased</a>, which introduced grayscale levels.<sup id="cite_ref-LeCun_7-1" class="reference"><a href="#cite_note-LeCun-7">&#91;7&#93;</a></sup>
+</p><p>The MNIST database contains 60,000 training images and 10,000 testing images.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup> Half of the training set and half of the test set were taken from NIST's training dataset, while the other half of the training set and the other half of the test set were taken from NIST's testing dataset.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> The original creators of the database keep a list of some of the methods tested on it.<sup id="cite_ref-LeCun_7-2" class="reference"><a href="#cite_note-LeCun-7">&#91;7&#93;</a></sup> In their original paper, they use a <a href="/wiki/Support-vector_machine" title="Support-vector machine">support-vector machine</a> to get an error rate of 0.8%.<sup id="cite_ref-Gradient_10-0" class="reference"><a href="#cite_note-Gradient-10">&#91;10&#93;</a></sup> An extended dataset similar to MNIST called EMNIST has been published in 2017, which contains 240,000 training images, and 40,000 testing images of handwritten digits and characters.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Performance"><span class="tocnumber">2</span> <span class="toctext">Performance</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Classifiers"><span class="tocnumber">3</span> <span class="toctext">Classifiers</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Further_reading"><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MNIST_database&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The set of images in the MNIST database was created in 1998 as a combination of two of <a href="/wiki/NIST" class="mw-redirect" title="NIST">NIST</a>'s databases: Special Database 1 and Special Database 3. Special Database 1 and Special Database 3 consist of digits written by high school students and employees of the <a href="/wiki/United_States_Census_Bureau" title="United States Census Bureau">United States Census Bureau</a>, respectively.<sup id="cite_ref-LeCun_7-3" class="reference"><a href="#cite_note-LeCun-7">&#91;7&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Performance">Performance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MNIST_database&amp;action=edit&amp;section=2" title="Edit section: Performance">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Some researchers have achieved "near-human performance" on the MNIST database, using a committee of neural networks; in the same paper, the authors achieve performance double that of humans on other recognition tasks.<sup id="cite_ref-Multideep_12-0" class="reference"><a href="#cite_note-Multideep-12">&#91;12&#93;</a></sup> The highest error rate listed<sup id="cite_ref-LeCun_7-4" class="reference"><a href="#cite_note-LeCun-7">&#91;7&#93;</a></sup> on the original website of the database is 12 percent, which is achieved using a simple linear classifier with no preprocessing.<sup id="cite_ref-Gradient_10-1" class="reference"><a href="#cite_note-Gradient-10">&#91;10&#93;</a></sup>
+</p><p>In 2004, a best-case error rate of 0.42 percent was achieved on the database by researchers using a new classifier called the LIRA, which is a neural classifier with three neuron layers based on Rosenblatt's perceptron principles.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup>
+</p><p>Some researchers have tested artificial intelligence systems using the database put under random distortions. The systems in these cases are usually neural networks and the distortions used tend to be either <a href="/wiki/Affine_transformation" title="Affine transformation">affine distortions</a> or <a href="/wiki/Elastic_deformation" class="mw-redirect" title="Elastic deformation">elastic distortions</a>.<sup id="cite_ref-LeCun_7-5" class="reference"><a href="#cite_note-LeCun-7">&#91;7&#93;</a></sup> Sometimes, these systems can be very successful; one such system achieved an error rate on the database of 0.39 percent.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup>
+</p><p>In 2011, an error rate of 0.27 percent, improving on the previous best result, was reported by researchers using a similar system of neural networks.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup> In 2013, an approach based on regularization of neural networks using DropConnect has been claimed to achieve a 0.21 percent error rate.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;16&#93;</a></sup> In 2016, the single convolutional neural network best performance was 0.25 percent error rate.<sup id="cite_ref-:0_17-0" class="reference"><a href="#cite_note-:0-17">&#91;17&#93;</a></sup> As of August 2018, the best performance of a single convolutional neural network trained on MNIST training data using no <a href="/wiki/Data_augmentation" title="Data augmentation">data augmentation</a> is 0.25 percent error rate.<sup id="cite_ref-:0_17-1" class="reference"><a href="#cite_note-:0-17">&#91;17&#93;</a></sup><sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;18&#93;</a></sup> Also, the Parallel Computing Center (Khmelnytskyi, Ukraine) obtained an ensemble of only 5 convolutional neural networks which performs on MNIST at 0.21 percent error rate.<sup id="cite_ref-Romanuke3_19-0" class="reference"><a href="#cite_note-Romanuke3-19">&#91;19&#93;</a></sup><sup id="cite_ref-Romanuke4_20-0" class="reference"><a href="#cite_note-Romanuke4-20">&#91;20&#93;</a></sup> Some images in the testing dataset are barely readable and may prevent reaching test error rates of 0%.<sup id="cite_ref-mnist_github_21-0" class="reference"><a href="#cite_note-mnist_github-21">&#91;21&#93;</a></sup> In 2018, researchers from Department of System and Information Engineering, University of Virginia announced 0.18% error  with simultaneous stacked three kind of neural networks (fully connected, recurrent and convolution neural networks).<sup id="cite_ref-Kowsari2018_22-0" class="reference"><a href="#cite_note-Kowsari2018-22">&#91;22&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Classifiers">Classifiers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MNIST_database&amp;action=edit&amp;section=3" title="Edit section: Classifiers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>This is a table of some of the <a href="/wiki/Machine_learning" title="Machine learning">machine learning</a> methods used on the dataset and their error rates, by type of classifier:
+</p>
+<table class="wikitable sortable">
+
+<tbody><tr>
+<th>Type</th>
+<th>Classifier</th>
+<th>Distortion</th>
+<th><a href="/wiki/Data_pre-processing" title="Data pre-processing">Preprocessing</a></th>
+<th>Error rate (%)
+</th></tr>
+<tr>
+<td><a href="/wiki/Linear_classifier" title="Linear classifier">Linear classifier</a></td>
+<td><a href="/wiki/Linear_discriminant_analysis" title="Linear discriminant analysis">Pairwise linear classifier</a></td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td>Deskewing</td>
+<td>7.6<sup id="cite_ref-Gradient_10-2" class="reference"><a href="#cite_note-Gradient-10">&#91;10&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/K-Nearest_Neighbors" class="mw-redirect" title="K-Nearest Neighbors">K-Nearest Neighbors</a></td>
+<td>K-NN with non-linear deformation (P2DHMDM)</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td>Shiftable edges</td>
+<td>0.52<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">&#91;23&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/Gradient_boosting" title="Gradient boosting">Boosted Stumps</a></td>
+<td>Product of stumps on <a href="/wiki/Haar-like_feature" title="Haar-like feature">Haar features</a></td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td>Haar features</td>
+<td>0.87<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">&#91;24&#93;</a></sup>
+</td></tr>
+<tr>
+<td>Non-linear classifier</td>
+<td>40 PCA + quadratic classifier</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td>3.3<sup id="cite_ref-Gradient_10-3" class="reference"><a href="#cite_note-Gradient-10">&#91;10&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/Random_Forest" class="mw-redirect" title="Random Forest">Random Forest</a></td>
+<td><span class="nowrap">Fast Unified Random Forests for Survival, Regression, and Classification (RF-SRC)<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">&#91;25&#93;</a></sup></span></td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td>Simple statistical pixel importance</td>
+<td>2.8<sup id="cite_ref-26" class="reference"><a href="#cite_note-26">&#91;26&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/Support-vector_machine" title="Support-vector machine">Support-vector machine</a> (SVM)</td>
+<td>Virtual <a href="/wiki/Support-vector_machine" title="Support-vector machine">SVM</a>, deg-9 poly, 2-pixel jittered</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td>Deskewing</td>
+<td>0.56<sup id="cite_ref-Decoste2012_27-0" class="reference"><a href="#cite_note-Decoste2012-27">&#91;27&#93;</a></sup>
+</td></tr>
+<tr>
+<td>Deep <a href="/wiki/Neural_network" title="Neural network">neural network</a> (DNN)</td>
+<td>2-layer 784-800-10</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td>1.6<sup id="cite_ref-simard2003_28-0" class="reference"><a href="#cite_note-simard2003-28">&#91;28&#93;</a></sup>
+</td></tr>
+<tr>
+<td>Deep <a href="/wiki/Neural_network" title="Neural network">neural network</a></td>
+<td>2-layer 784-800-10</td>
+<td>Elastic&#160;distortions</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td>0.7<sup id="cite_ref-simard2003_28-1" class="reference"><a href="#cite_note-simard2003-28">&#91;28&#93;</a></sup>
+</td></tr>
+<tr>
+<td>Deep <a href="/wiki/Neural_network" title="Neural network">neural network</a></td>
+<td>6-layer 784-2500-2000-1500-1000-500-10</td>
+<td>Elastic&#160;distortions</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td>0.35<sup id="cite_ref-29" class="reference"><a href="#cite_note-29">&#91;29&#93;</a></sup>
+</td></tr>
+<tr>
+<td><span class="nowrap"><a href="/wiki/Convolutional_neural_network" title="Convolutional neural network">Convolutional neural network</a> (CNN)</span></td>
+<td>6-layer 784-40-80-500-1000-2000-10</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td><span class="nowrap">Expansion of the training data</span></td>
+<td>0.31<sup id="cite_ref-Romanuke1_30-0" class="reference"><a href="#cite_note-Romanuke1-30">&#91;30&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/Convolutional_neural_network" title="Convolutional neural network">Convolutional neural network</a></td>
+<td>6-layer 784-50-100-500-1000-10-10</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td>Expansion of the training data</td>
+<td>0.27<sup id="cite_ref-Romanuke2_31-0" class="reference"><a href="#cite_note-Romanuke2-31">&#91;31&#93;</a></sup>
+</td></tr>
+<tr>
+<td><span class="nowrap"><a href="/wiki/Convolutional_neural_network" title="Convolutional neural network">Convolutional neural network</a> (CNN)</span>
+</td>
+<td>13-layer 64-128(5x)-256(3x)-512-2048-256-256-10</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None
+</td>
+<td>0.25<sup id="cite_ref-:0_17-2" class="reference"><a href="#cite_note-:0-17">&#91;17&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/Convolutional_neural_network" title="Convolutional neural network">Convolutional neural network</a></td>
+<td>Committee of 35 CNNs, 1-20-P-40-P-150-10</td>
+<td>Elastic&#160;distortions</td>
+<td>Width normalizations</td>
+<td>0.23<sup id="cite_ref-Multideep_12-1" class="reference"><a href="#cite_note-Multideep-12">&#91;12&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/Convolutional_neural_network" title="Convolutional neural network">Convolutional neural network</a></td>
+<td><span class="nowrap">Committee of 5 CNNs, 6-layer 784-50-100-500-1000-10-10</span></td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td>Expansion of the training data</td>
+<td>0.21<sup id="cite_ref-Romanuke3_19-1" class="reference"><a href="#cite_note-Romanuke3-19">&#91;19&#93;</a></sup><sup id="cite_ref-Romanuke4_20-1" class="reference"><a href="#cite_note-Romanuke4-20">&#91;20&#93;</a></sup>
+</td></tr>
+<tr>
+<td>Random Multimodel Deep Learning (RMDL)
+</td>
+<td>10 NN-10 RNN - 10 CNN</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None</td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None
+</td>
+<td>0.18<sup id="cite_ref-Kowsari2018_22-1" class="reference"><a href="#cite_note-Kowsari2018-22">&#91;22&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/Convolutional_neural_network" title="Convolutional neural network">Convolutional neural network</a>
+</td>
+<td>Committee of 20 CNNS with Squeeze-and-Excitation Networks<sup id="cite_ref-32" class="reference"><a href="#cite_note-32">&#91;32&#93;</a></sup></td>
+<td style="background: #FFD; vertical-align: middle; text-align: center;" class="partial table-partial">None
+</td>
+<td><a href="/wiki/Data_augmentation" title="Data augmentation">Data augmentation</a>
+</td>
+<td>0.17<sup id="cite_ref-Matuzas_33-0" class="reference"><a href="#cite_note-Matuzas-33">&#91;33&#93;</a></sup>
+</td></tr></tbody></table>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MNIST_database&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/List_of_datasets_for_machine_learning_research" class="mw-redirect" title="List of datasets for machine learning research">List of datasets for machine learning research</a></li>
+<li><a href="/wiki/Caltech_101" title="Caltech 101">Caltech 101</a></li>
+<li><a href="/wiki/LabelMe" title="LabelMe">LabelMe</a></li>
+<li><a href="/wiki/Optical_character_recognition" title="Optical character recognition">OCR</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MNIST_database&amp;action=edit&amp;section=5" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist reflist-columns references-column-width reflist-columns-2" style="">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r1067248974">.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:#d33}.mw-parser-output .cs1-visible-error{color:#d33}.mw-parser-output .cs1-maint{display:none;color:#3a3;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://yann.lecun.com/exdb/mnist/">"THE MNIST DATABASE of handwritten digits"</a>. <a href="/wiki/Yann_LeCun" title="Yann LeCun">Yann LeCun</a>, Courant Institute, NYU Corinna Cortes, Google Labs, New York Christopher J.C. Burges, Microsoft Research, Redmond.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=THE+MNIST+DATABASE+of+handwritten+digits&amp;rft.pub=Yann+LeCun%2C+Courant+Institute%2C+NYU+Corinna+Cortes%2C+Google+Labs%2C+New+York+Christopher+J.C.+Burges%2C+Microsoft+Research%2C+Redmond&amp;rft_id=http%3A%2F%2Fyann.lecun.com%2Fexdb%2Fmnist%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="http://www.vision-systems.com/articles/print/volume-9/issue-9/technology-trends/software/support-vector-machines-speed-pattern-recognition.html">"Support vector machines speed pattern recognition - Vision Systems Design"</a>. <i>Vision Systems Design</i><span class="reference-accessdate">. Retrieved <span class="nowrap">17 August</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Vision+Systems+Design&amp;rft.atitle=Support+vector+machines+speed+pattern+recognition+-+Vision+Systems+Design&amp;rft_id=http%3A%2F%2Fwww.vision-systems.com%2Farticles%2Fprint%2Fvolume-9%2Fissue-9%2Ftechnology-trends%2Fsoftware%2Fsupport-vector-machines-speed-pattern-recognition.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFGangaputra" class="citation web cs1">Gangaputra, Sachin. <a rel="nofollow" class="external text" href="http://cis.jhu.edu/~sachin/digit/digit.html">"Handwritten digit database"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">17 August</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Handwritten+digit+database&amp;rft.aulast=Gangaputra&amp;rft.aufirst=Sachin&amp;rft_id=http%3A%2F%2Fcis.jhu.edu%2F~sachin%2Fdigit%2Fdigit.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFQiao2007" class="citation web cs1">Qiao, Yu (2007). <a rel="nofollow" class="external text" href="http://www.gavo.t.u-tokyo.ac.jp/~qiao/database.html">"THE MNIST DATABASE of handwritten digits"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">18 August</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=THE+MNIST+DATABASE+of+handwritten+digits&amp;rft.date=2007&amp;rft.aulast=Qiao&amp;rft.aufirst=Yu&amp;rft_id=http%3A%2F%2Fwww.gavo.t.u-tokyo.ac.jp%2F~qiao%2Fdatabase.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFPlatt1999" class="citation journal cs1">Platt, John C. (1999). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20160304083810/http://ar.newsmth.net/att/148aa490aed5b5/smo-nips.pdf">"Using analytic QP and sparseness to speed training of support vector machines"</a> <span class="cs1-format">(PDF)</span>. <i>Advances in Neural Information Processing Systems</i>: 557–563. Archived from <a rel="nofollow" class="external text" href="http://ar.newsmth.net/att/148aa490aed5b5/smo-nips.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 4 March 2016<span class="reference-accessdate">. Retrieved <span class="nowrap">18 August</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Advances+in+Neural+Information+Processing+Systems&amp;rft.atitle=Using+analytic+QP+and+sparseness+to+speed+training+of+support+vector+machines&amp;rft.pages=557-563&amp;rft.date=1999&amp;rft.aulast=Platt&amp;rft.aufirst=John+C.&amp;rft_id=http%3A%2F%2Far.newsmth.net%2Fatt%2F148aa490aed5b5%2Fsmo-nips.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFGrother" class="citation web cs1">Grother, Patrick J. <a rel="nofollow" class="external text" href="https://www.nist.gov/system/files/documents/srd/nistsd19.pdf">"NIST Special Database 19 - Handprinted Forms and Characters Database"</a> <span class="cs1-format">(PDF)</span>. <i><a href="/wiki/National_Institute_of_Standards_and_Technology" title="National Institute of Standards and Technology">National Institute of Standards and Technology</a></i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=National+Institute+of+Standards+and+Technology&amp;rft.atitle=NIST+Special+Database+19+-+Handprinted+Forms+and+Characters+Database&amp;rft.aulast=Grother&amp;rft.aufirst=Patrick+J.&amp;rft_id=https%3A%2F%2Fwww.nist.gov%2Fsystem%2Ffiles%2Fdocuments%2Fsrd%2Fnistsd19.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-LeCun-7"><span class="mw-cite-backlink">^ <a href="#cite_ref-LeCun_7-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-LeCun_7-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-LeCun_7-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-LeCun_7-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-LeCun_7-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-LeCun_7-5"><sup><i><b>f</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFLeCunCortezBurges" class="citation web cs1">LeCun, Yann; Cortez, Corinna; Burges, Christopher C.J. <a rel="nofollow" class="external text" href="http://yann.lecun.com/exdb/mnist/">"The MNIST Handwritten Digit Database"</a>. <i>Yann LeCun's Website yann.lecun.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">30 April</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Yann+LeCun%27s+Website+yann.lecun.com&amp;rft.atitle=The+MNIST+Handwritten+Digit+Database&amp;rft.aulast=LeCun&amp;rft.aufirst=Yann&amp;rft.au=Cortez%2C+Corinna&amp;rft.au=Burges%2C+Christopher+C.J.&amp;rft_id=http%3A%2F%2Fyann.lecun.com%2Fexdb%2Fmnist%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFKussulBaidyk2004" class="citation journal cs1">Kussul, Ernst; Baidyk, Tatiana (2004). "Improved method of handwritten digit recognition tested on MNIST database". <i>Image and Vision Computing</i>. <b>22</b> (12): 971–981. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2Fj.imavis.2004.03.008">10.1016/j.imavis.2004.03.008</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Image+and+Vision+Computing&amp;rft.atitle=Improved+method+of+handwritten+digit+recognition+tested+on+MNIST+database&amp;rft.volume=22&amp;rft.issue=12&amp;rft.pages=971-981&amp;rft.date=2004&amp;rft_id=info%3Adoi%2F10.1016%2Fj.imavis.2004.03.008&amp;rft.aulast=Kussul&amp;rft.aufirst=Ernst&amp;rft.au=Baidyk%2C+Tatiana&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFZhangSrihari2004" class="citation journal cs1">Zhang, Bin; Srihari, Sargur N. (2004). <a rel="nofollow" class="external text" href="http://mleg.cse.sc.edu/edu/csce822/uploads/Main.ReadingList/KNN_fastbyClustering.pdf">"Fast <i>k</i>-Nearest Neighbor Classification Using Cluster-Based Trees"</a> <span class="cs1-format">(PDF)</span>. <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i>. <b>26</b> (4): 525–528. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FTPAMI.2004.1265868">10.1109/TPAMI.2004.1265868</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/15382657">15382657</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:6883417">6883417</a><span class="reference-accessdate">. Retrieved <span class="nowrap">20 April</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Pattern+Analysis+and+Machine+Intelligence&amp;rft.atitle=Fast+k-Nearest+Neighbor+Classification+Using+Cluster-Based+Trees&amp;rft.volume=26&amp;rft.issue=4&amp;rft.pages=525-528&amp;rft.date=2004&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A6883417%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F15382657&amp;rft_id=info%3Adoi%2F10.1109%2FTPAMI.2004.1265868&amp;rft.aulast=Zhang&amp;rft.aufirst=Bin&amp;rft.au=Srihari%2C+Sargur+N.&amp;rft_id=http%3A%2F%2Fmleg.cse.sc.edu%2Fedu%2Fcsce822%2Fuploads%2FMain.ReadingList%2FKNN_fastbyClustering.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Gradient-10"><span class="mw-cite-backlink">^ <a href="#cite_ref-Gradient_10-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Gradient_10-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Gradient_10-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-Gradient_10-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFLeCunLéon_BottouYoshua_BengioPatrick_Haffner1998" class="citation journal cs1">LeCun, Yann; Léon Bottou; Yoshua Bengio; Patrick Haffner (1998). <a rel="nofollow" class="external text" href="http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf">"Gradient-Based Learning Applied to Document Recognition"</a> <span class="cs1-format">(PDF)</span>. <i>Proceedings of the IEEE</i>. <b>86</b> (11): 2278–2324. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2F5.726791">10.1109/5.726791</a><span class="reference-accessdate">. Retrieved <span class="nowrap">18 August</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+IEEE&amp;rft.atitle=Gradient-Based+Learning+Applied+to+Document+Recognition&amp;rft.volume=86&amp;rft.issue=11&amp;rft.pages=2278-2324&amp;rft.date=1998&amp;rft_id=info%3Adoi%2F10.1109%2F5.726791&amp;rft.aulast=LeCun&amp;rft.aufirst=Yann&amp;rft.au=L%C3%A9on+Bottou&amp;rft.au=Yoshua+Bengio&amp;rft.au=Patrick+Haffner&amp;rft_id=http%3A%2F%2Fyann.lecun.com%2Fexdb%2Fpublis%2Fpdf%2Flecun-98.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFCohenAfsharTapsonvan_Schaik2017" class="citation arxiv cs1">Cohen, Gregory; Afshar, Saeed; Tapson, Jonathan; van Schaik, André (2017-02-17). "EMNIST: an extension of MNIST to handwritten letters". <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1702.05373">1702.05373</a></span> [<a rel="nofollow" class="external text" href="//arxiv.org/archive/cs.CV">cs.CV</a>].</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=EMNIST%3A+an+extension+of+MNIST+to+handwritten+letters&amp;rft.date=2017-02-17&amp;rft_id=info%3Aarxiv%2F1702.05373&amp;rft.aulast=Cohen&amp;rft.aufirst=Gregory&amp;rft.au=Afshar%2C+Saeed&amp;rft.au=Tapson%2C+Jonathan&amp;rft.au=van+Schaik%2C+Andr%C3%A9&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Multideep-12"><span class="mw-cite-backlink">^ <a href="#cite_ref-Multideep_12-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Multideep_12-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFCires¸anUeli_MeierJürgen_Schmidhuber2012" class="citation book cs1">Cires¸an, Dan; Ueli Meier; Jürgen Schmidhuber (2012). <a rel="nofollow" class="external text" href="http://repository.supsi.ch/5145/1/IDSIA-04-12.pdf">"Multi-column deep neural networks for image classification"</a> <span class="cs1-format">(PDF)</span>. <i>2012 IEEE Conference on Computer Vision and Pattern Recognition</i>. pp.&#160;3642–3649. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1202.2745">1202.2745</a></span>. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.300.3283">10.1.1.300.3283</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FCVPR.2012.6248110">10.1109/CVPR.2012.6248110</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4673-1228-8" title="Special:BookSources/978-1-4673-1228-8"><bdi>978-1-4673-1228-8</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:2161592">2161592</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Multi-column+deep+neural+networks+for+image+classification&amp;rft.btitle=2012+IEEE+Conference+on+Computer+Vision+and+Pattern+Recognition&amp;rft.pages=3642-3649&amp;rft.date=2012&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A2161592%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FCVPR.2012.6248110&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.300.3283%23id-name%3DCiteSeerX&amp;rft_id=info%3Aarxiv%2F1202.2745&amp;rft.isbn=978-1-4673-1228-8&amp;rft.aulast=Cires%C2%B8an&amp;rft.aufirst=Dan&amp;rft.au=Ueli+Meier&amp;rft.au=J%C3%BCrgen+Schmidhuber&amp;rft_id=http%3A%2F%2Frepository.supsi.ch%2F5145%2F1%2FIDSIA-04-12.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFKussulTatiana_Baidyk2004" class="citation journal cs1">Kussul, Ernst; Tatiana Baidyk (2004). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20130921060416/https://vlabdownload.googlecode.com/files/Image_VisionComputing.pdf">"Improved method of handwritten digit recognition tested on MNIST database"</a> <span class="cs1-format">(PDF)</span>. <i>Image and Vision Computing</i>. <b>22</b> (12): 971–981. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1016%2Fj.imavis.2004.03.008">10.1016/j.imavis.2004.03.008</a>. Archived from <a rel="nofollow" class="external text" href="https://vlabdownload.googlecode.com/files/Image_VisionComputing.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 21 September 2013<span class="reference-accessdate">. Retrieved <span class="nowrap">20 September</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Image+and+Vision+Computing&amp;rft.atitle=Improved+method+of+handwritten+digit+recognition+tested+on+MNIST+database&amp;rft.volume=22&amp;rft.issue=12&amp;rft.pages=971-981&amp;rft.date=2004&amp;rft_id=info%3Adoi%2F10.1016%2Fj.imavis.2004.03.008&amp;rft.aulast=Kussul&amp;rft.aufirst=Ernst&amp;rft.au=Tatiana+Baidyk&amp;rft_id=https%3A%2F%2Fvlabdownload.googlecode.com%2Ffiles%2FImage_VisionComputing.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFRanzatoChristopher_PoultneySumit_ChopraYann_LeCun2006" class="citation journal cs1">Ranzato, Marc’Aurelio; Christopher Poultney; Sumit Chopra; Yann LeCun (2006). <a rel="nofollow" class="external text" href="http://yann.lecun.com/exdb/publis/pdf/ranzato-06.pdf">"Efficient Learning of Sparse Representations with an Energy-Based Model"</a> <span class="cs1-format">(PDF)</span>. <i>Advances in Neural Information Processing Systems</i>. <b>19</b>: 1137–1144<span class="reference-accessdate">. Retrieved <span class="nowrap">20 September</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Advances+in+Neural+Information+Processing+Systems&amp;rft.atitle=Efficient+Learning+of+Sparse+Representations+with+an+Energy-Based+Model&amp;rft.volume=19&amp;rft.pages=1137-1144&amp;rft.date=2006&amp;rft.aulast=Ranzato&amp;rft.aufirst=Marc%E2%80%99Aurelio&amp;rft.au=Christopher+Poultney&amp;rft.au=Sumit+Chopra&amp;rft.au=Yann+LeCun&amp;rft_id=http%3A%2F%2Fyann.lecun.com%2Fexdb%2Fpublis%2Fpdf%2Franzato-06.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFCiresanUeli_MeierLuca_Maria_GambardellaJürgen_Schmidhuber2011" class="citation book cs1">Ciresan, Dan Claudiu; Ueli Meier; Luca Maria Gambardella; Jürgen Schmidhuber (2011). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20160222152015/http://www.icdar2011.org/fileup/PDF/4520b135.pdf">"Convolutional neural network committees for handwritten character classification"</a> <span class="cs1-format">(PDF)</span>. <i>2011 International Conference on Document Analysis and Recognition (ICDAR)</i>. pp.&#160;1135–1139. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.465.2138">10.1.1.465.2138</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FICDAR.2011.229">10.1109/ICDAR.2011.229</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-1-4577-1350-7" title="Special:BookSources/978-1-4577-1350-7"><bdi>978-1-4577-1350-7</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:10122297">10122297</a>. Archived from <a rel="nofollow" class="external text" href="http://www.icdar2011.org/fileup/PDF/4520b135.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 22 February 2016<span class="reference-accessdate">. Retrieved <span class="nowrap">20 September</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Convolutional+neural+network+committees+for+handwritten+character+classification&amp;rft.btitle=2011+International+Conference+on+Document+Analysis+and+Recognition+%28ICDAR%29&amp;rft.pages=1135-1139&amp;rft.date=2011&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.465.2138%23id-name%3DCiteSeerX&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A10122297%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FICDAR.2011.229&amp;rft.isbn=978-1-4577-1350-7&amp;rft.aulast=Ciresan&amp;rft.aufirst=Dan+Claudiu&amp;rft.au=Ueli+Meier&amp;rft.au=Luca+Maria+Gambardella&amp;rft.au=J%C3%BCrgen+Schmidhuber&amp;rft_id=http%3A%2F%2Fwww.icdar2011.org%2Ffileup%2FPDF%2F4520b135.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-16">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFWanMatthew_ZeilerSixin_ZhangYann_LeCun2013" class="citation conference cs1">Wan, Li; Matthew Zeiler; Sixin Zhang; Yann LeCun; Rob Fergus (2013). <i>Regularization of Neural Network using DropConnect</i>. International Conference on Machine Learning(ICML).</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Regularization+of+Neural+Network+using+DropConnect&amp;rft.date=2013&amp;rft.aulast=Wan&amp;rft.aufirst=Li&amp;rft.au=Matthew+Zeiler&amp;rft.au=Sixin+Zhang&amp;rft.au=Yann+LeCun&amp;rft.au=Rob+Fergus&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-:0-17"><span class="mw-cite-backlink">^ <a href="#cite_ref-:0_17-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-:0_17-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-:0_17-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFSimpleNet2016" class="citation web cs1">SimpleNet (2016). <a rel="nofollow" class="external text" href="https://github.com/Coderx7/SimpleNet">"Lets Keep it simple, Using simple architectures to outperform deeper and more complex architectures"</a>. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1608.06037">1608.06037</a></span><span class="reference-accessdate">. Retrieved <span class="nowrap">3 December</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Lets+Keep+it+simple%2C+Using+simple+architectures+to+outperform+deeper+and+more+complex+architectures&amp;rft.date=2016&amp;rft_id=info%3Aarxiv%2F1608.06037&amp;rft.au=SimpleNet&amp;rft_id=https%3A%2F%2Fgithub.com%2FCoderx7%2FSimpleNet&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFSimpNet2018" class="citation web cs1">SimpNet (2018). <a rel="nofollow" class="external text" href="https://github.com/Coderx7/SimpNet">"Towards Principled Design of Deep Convolutional Networks: Introducing SimpNet"</a>. <i>Github</i>. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1802.06205">1802.06205</a></span><span class="reference-accessdate">. Retrieved <span class="nowrap">3 December</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Github&amp;rft.atitle=Towards+Principled+Design+of+Deep+Convolutional+Networks%3A+Introducing+SimpNet&amp;rft.date=2018&amp;rft_id=info%3Aarxiv%2F1802.06205&amp;rft.au=SimpNet&amp;rft_id=https%3A%2F%2Fgithub.com%2FCoderx7%2FSimpNet&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Romanuke3-19"><span class="mw-cite-backlink">^ <a href="#cite_ref-Romanuke3_19-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Romanuke3_19-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFRomanuke" class="citation web cs1">Romanuke, Vadim. <a rel="nofollow" class="external text" href="https://drive.google.com/file/d/0B1WkCFOvGHDddElkdkl6bzRLRE0/view?usp=sharing">"Parallel Computing Center (Khmelnytskyi, Ukraine) represents an ensemble of 5 convolutional neural networks which performs on MNIST at 0.21 percent error rate"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">24 November</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Parallel+Computing+Center+%28Khmelnytskyi%2C+Ukraine%29+represents+an+ensemble+of+5+convolutional+neural+networks+which+performs+on+MNIST+at+0.21+percent+error+rate.&amp;rft.aulast=Romanuke&amp;rft.aufirst=Vadim&amp;rft_id=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F0B1WkCFOvGHDddElkdkl6bzRLRE0%2Fview%3Fusp%3Dsharing&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Romanuke4-20"><span class="mw-cite-backlink">^ <a href="#cite_ref-Romanuke4_20-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Romanuke4_20-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="24" class="citation journal cs1">Romanuke, Vadim (2016). <a rel="nofollow" class="external text" href="https://doi.org/10.20535%2F1810-0546.2016.6.84115">"Training data expansion and boosting of convolutional neural networks for reducing the MNIST dataset error rate"</a>. <i>Research Bulletin of NTUU "Kyiv Polytechnic Institute"</i>. <b>6</b> (6): 29–34. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.20535%2F1810-0546.2016.6.84115">10.20535/1810-0546.2016.6.84115</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Research+Bulletin+of+NTUU+%22Kyiv+Polytechnic+Institute%22&amp;rft.atitle=Training+data+expansion+and+boosting+of+convolutional+neural+networks+for+reducing+the+MNIST+dataset+error+rate&amp;rft.volume=6&amp;rft.issue=6&amp;rft.pages=29-34&amp;rft.date=2016&amp;rft_id=info%3Adoi%2F10.20535%2F1810-0546.2016.6.84115&amp;rft.aulast=Romanuke&amp;rft.aufirst=Vadim&amp;rft_id=%2F%2Fdoi.org%2F10.20535%252F1810-0546.2016.6.84115&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-mnist_github-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-mnist_github_21-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFMNIST_classifier" class="citation web cs1">MNIST classifier, GitHub. <a rel="nofollow" class="external text" href="https://github.com/j05t/mnist">"Classify MNIST digits using Convolutional Neural Networks"</a>. <i><a href="/wiki/GitHub" title="GitHub">GitHub</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">3 August</span> 2018</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GitHub&amp;rft.atitle=Classify+MNIST+digits+using+Convolutional+Neural+Networks&amp;rft.aulast=MNIST+classifier&amp;rft.aufirst=GitHub&amp;rft_id=https%3A%2F%2Fgithub.com%2Fj05t%2Fmnist&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Kowsari2018-22"><span class="mw-cite-backlink">^ <a href="#cite_ref-Kowsari2018_22-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Kowsari2018_22-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFKowsariHeidarysafaBrownMeimandi2018" class="citation journal cs1">Kowsari, Kamran; Heidarysafa, Mojtaba; Brown, Donald E.; Meimandi, Kiana Jafari; Barnes, Laura E. (2018-05-03). "RMDL: Random Multimodel Deep Learning for Classification". <i>Proceedings of the 2018 International Conference on Information System and Data Mining</i>. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1805.01890">1805.01890</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1145%2F3206098.3206111">10.1145/3206098.3206111</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:19208611">19208611</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+2018+International+Conference+on+Information+System+and+Data+Mining&amp;rft.atitle=RMDL%3A+Random+Multimodel+Deep+Learning+for+Classification&amp;rft.date=2018-05-03&amp;rft_id=info%3Aarxiv%2F1805.01890&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A19208611%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1145%2F3206098.3206111&amp;rft.aulast=Kowsari&amp;rft.aufirst=Kamran&amp;rft.au=Heidarysafa%2C+Mojtaba&amp;rft.au=Brown%2C+Donald+E.&amp;rft.au=Meimandi%2C+Kiana+Jafari&amp;rft.au=Barnes%2C+Laura+E.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFKeysersThomas_DeselaersChristian_GollanHermann_Ney2007" class="citation journal cs1">Keysers, Daniel; Thomas Deselaers; Christian Gollan; Hermann Ney (August 2007). "Deformation models for image recognition". <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i>. <b>29</b> (8): 1422–1435. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.106.3963">10.1.1.106.3963</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FTPAMI.2007.1153">10.1109/TPAMI.2007.1153</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/17568145">17568145</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:2528485">2528485</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Pattern+Analysis+and+Machine+Intelligence&amp;rft.atitle=Deformation+models+for+image+recognition&amp;rft.volume=29&amp;rft.issue=8&amp;rft.pages=1422-1435&amp;rft.date=2007-08&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.106.3963%23id-name%3DCiteSeerX&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A2528485%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F17568145&amp;rft_id=info%3Adoi%2F10.1109%2FTPAMI.2007.1153&amp;rft.aulast=Keysers&amp;rft.aufirst=Daniel&amp;rft.au=Thomas+Deselaers&amp;rft.au=Christian+Gollan&amp;rft.au=Hermann+Ney&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="#cite_ref-24">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFKéglRóbert_Busa-Fekete2009" class="citation journal cs1">Kégl, Balázs; Róbert Busa-Fekete (2009). <a rel="nofollow" class="external text" href="https://users.lal.in2p3.fr/kegl/research/PDFs/keglBusafeRekete09.pdf">"Boosting products of base classifiers"</a> <span class="cs1-format">(PDF)</span>. <i>Proceedings of the 26th Annual International Conference on Machine Learning</i>: 497–504<span class="reference-accessdate">. Retrieved <span class="nowrap">27 August</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+the+26th+Annual+International+Conference+on+Machine+Learning&amp;rft.atitle=Boosting+products+of+base+classifiers&amp;rft.pages=497-504&amp;rft.date=2009&amp;rft.aulast=K%C3%A9gl&amp;rft.aufirst=Bal%C3%A1zs&amp;rft.au=R%C3%B3bert+Busa-Fekete&amp;rft_id=https%3A%2F%2Fusers.lal.in2p3.fr%2Fkegl%2Fresearch%2FPDFs%2FkeglBusafeRekete09.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-25">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://cran.r-project.org/web/packages/randomForestSRC/">"RandomForestSRC: Fast Unified Random Forests for Survival, Regression, and Classification (RF-SRC)"</a>. 21 January 2020.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=RandomForestSRC%3A+Fast+Unified+Random+Forests+for+Survival%2C+Regression%2C+and+Classification+%28RF-SRC%29&amp;rft.date=2020-01-21&amp;rft_id=https%3A%2F%2Fcran.r-project.org%2Fweb%2Fpackages%2FrandomForestSRC%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="#cite_ref-26">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://gitlab.com/m.mahmoudian/mnist-with-randomforest">"Mehrad Mahmoudian / MNIST with RandomForest"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Mehrad+Mahmoudian+%2F+MNIST+with+RandomForest&amp;rft_id=https%3A%2F%2Fgitlab.com%2Fm.mahmoudian%2Fmnist-with-randomforest&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Decoste2012-27"><span class="mw-cite-backlink"><b><a href="#cite_ref-Decoste2012_27-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFDecosteSchölkopf2002" class="citation journal cs1">Decoste, Dennis; Schölkopf, Bernhard (2002). <a rel="nofollow" class="external text" href="https://doi.org/10.1023%2FA%3A1012454411458">"Training Invariant Support Vector Machines"</a>. <i>Machine Learning</i>. <b>46</b> (1–3): 161–190. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.1023%2FA%3A1012454411458">10.1023/A:1012454411458</a></span>. <a href="/wiki/ISSN_(identifier)" class="mw-redirect" title="ISSN (identifier)">ISSN</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/issn/0885-6125">0885-6125</a>. <a href="/wiki/OCLC_(identifier)" class="mw-redirect" title="OCLC (identifier)">OCLC</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/oclc/703649027">703649027</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Machine+Learning&amp;rft.atitle=Training+Invariant+Support+Vector+Machines&amp;rft.volume=46&amp;rft.issue=1%E2%80%933&amp;rft.pages=161-190&amp;rft.date=2002&amp;rft_id=info%3Aoclcnum%2F703649027&amp;rft.issn=0885-6125&amp;rft_id=info%3Adoi%2F10.1023%2FA%3A1012454411458&amp;rft.aulast=Decoste&amp;rft.aufirst=Dennis&amp;rft.au=Sch%C3%B6lkopf%2C+Bernhard&amp;rft_id=%2F%2Fdoi.org%2F10.1023%252FA%253A1012454411458&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-simard2003-28"><span class="mw-cite-backlink">^ <a href="#cite_ref-simard2003_28-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-simard2003_28-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFPatrice_Y._SimardDave_SteinkrausJohn_C._Platt2003" class="citation book cs1">Patrice Y. Simard; Dave Steinkraus; John C. Platt (2003). <a rel="nofollow" class="external text" href="http://research.microsoft.com/apps/pubs/?id=68920">"Best Practices for Convolutional Neural Networks Applied to Visual Document Analysis"</a>. <i>Proceedings of the Seventh International Conference on Document Analysis and Recognition</i>. Vol.&#160;1. <a href="/wiki/Institute_of_Electrical_and_Electronics_Engineers" title="Institute of Electrical and Electronics Engineers">Institute of Electrical and Electronics Engineers</a>. p.&#160;958. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FICDAR.2003.1227801">10.1109/ICDAR.2003.1227801</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-7695-1960-9" title="Special:BookSources/978-0-7695-1960-9"><bdi>978-0-7695-1960-9</bdi></a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:4659176">4659176</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Best+Practices+for+Convolutional+Neural+Networks+Applied+to+Visual+Document+Analysis&amp;rft.btitle=Proceedings+of+the+Seventh+International+Conference+on+Document+Analysis+and+Recognition&amp;rft.pages=958&amp;rft.pub=Institute+of+Electrical+and+Electronics+Engineers&amp;rft.date=2003&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A4659176%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FICDAR.2003.1227801&amp;rft.isbn=978-0-7695-1960-9&amp;rft.au=Patrice+Y.+Simard&amp;rft.au=Dave+Steinkraus&amp;rft.au=John+C.+Platt&amp;rft_id=http%3A%2F%2Fresearch.microsoft.com%2Fapps%2Fpubs%2F%3Fid%3D68920&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFCiresanUeli_MeierLuca_Maria_GambardellaJuergen_Schmidhuber2010" class="citation journal cs1">Ciresan, Claudiu Dan; Ueli Meier; Luca Maria Gambardella; Juergen Schmidhuber (December 2010). "Deep Big Simple Neural Nets Excel on Handwritten Digit Recognition". <i>Neural Computation</i>. <b>22</b> (12): 3207–20. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1003.0358">1003.0358</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1162%2FNECO_a_00052">10.1162/NECO_a_00052</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/20858131">20858131</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:1918673">1918673</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Neural+Computation&amp;rft.atitle=Deep+Big+Simple+Neural+Nets+Excel+on+Handwritten+Digit+Recognition&amp;rft.volume=22&amp;rft.issue=12&amp;rft.pages=3207-20&amp;rft.date=2010-12&amp;rft_id=info%3Aarxiv%2F1003.0358&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A1918673%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F20858131&amp;rft_id=info%3Adoi%2F10.1162%2FNECO_a_00052&amp;rft.aulast=Ciresan&amp;rft.aufirst=Claudiu+Dan&amp;rft.au=Ueli+Meier&amp;rft.au=Luca+Maria+Gambardella&amp;rft.au=Juergen+Schmidhuber&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Romanuke1-30"><span class="mw-cite-backlink"><b><a href="#cite_ref-Romanuke1_30-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFRomanuke" class="citation web cs1">Romanuke, Vadim. <a rel="nofollow" class="external text" href="https://drive.google.com/file/d/0B1WkCFOvGHDdWlZvWUlLd0V3ZFU/view?usp=sharing">"The single convolutional neural network best performance in 18 epochs on the expanded training data at Parallel Computing Center, Khmelnytskyi, Ukraine"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">16 November</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=The+single+convolutional+neural+network+best+performance+in+18+epochs+on+the+expanded+training+data+at+Parallel+Computing+Center%2C+Khmelnytskyi%2C+Ukraine&amp;rft.aulast=Romanuke&amp;rft.aufirst=Vadim&amp;rft_id=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F0B1WkCFOvGHDdWlZvWUlLd0V3ZFU%2Fview%3Fusp%3Dsharing&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Romanuke2-31"><span class="mw-cite-backlink"><b><a href="#cite_ref-Romanuke2_31-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFRomanuke" class="citation web cs1">Romanuke, Vadim. <a rel="nofollow" class="external text" href="https://drive.google.com/file/d/0B1WkCFOvGHDdOC0yR0tfbmpidjg/view?usp=sharing">"Parallel Computing Center (Khmelnytskyi, Ukraine) gives a single convolutional neural network performing on MNIST at 0.27 percent error rate"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">24 November</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Parallel+Computing+Center+%28Khmelnytskyi%2C+Ukraine%29+gives+a+single+convolutional+neural+network+performing+on+MNIST+at+0.27+percent+error+rate&amp;rft.aulast=Romanuke&amp;rft.aufirst=Vadim&amp;rft_id=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F0B1WkCFOvGHDdOC0yR0tfbmpidjg%2Fview%3Fusp%3Dsharing&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="#cite_ref-32">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFHuShenAlbanieSun2019" class="citation journal cs1">Hu, Jie; Shen, Li; Albanie, Samuel; Sun, Gang; Wu, Enhua (2019). "Squeeze-and-Excitation Networks". <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i>. <b>42</b> (8): 2011–2023. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1709.01507">1709.01507</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FTPAMI.2019.2913372">10.1109/TPAMI.2019.2913372</a>. <a href="/wiki/PMID_(identifier)" class="mw-redirect" title="PMID (identifier)">PMID</a>&#160;<a rel="nofollow" class="external text" href="//pubmed.ncbi.nlm.nih.gov/31034408">31034408</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:140309863">140309863</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Pattern+Analysis+and+Machine+Intelligence&amp;rft.atitle=Squeeze-and-Excitation+Networks&amp;rft.volume=42&amp;rft.issue=8&amp;rft.pages=2011-2023&amp;rft.date=2019&amp;rft_id=info%3Aarxiv%2F1709.01507&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A140309863%23id-name%3DS2CID&amp;rft_id=info%3Apmid%2F31034408&amp;rft_id=info%3Adoi%2F10.1109%2FTPAMI.2019.2913372&amp;rft.aulast=Hu&amp;rft.aufirst=Jie&amp;rft.au=Shen%2C+Li&amp;rft.au=Albanie%2C+Samuel&amp;rft.au=Sun%2C+Gang&amp;rft.au=Wu%2C+Enhua&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+<li id="cite_note-Matuzas-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-Matuzas_33-0">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite class="citation web cs1"><a rel="nofollow" class="external text" href="https://github.com/Matuzas77/MNIST-0.17.git">"GitHub - Matuzas77/MNIST-0.17: MNIST classifier with average 0.17% error"</a>. <i><a href="/wiki/GitHub" title="GitHub">GitHub</a></i>. 25 February 2020.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=GitHub&amp;rft.atitle=GitHub+-+Matuzas77%2FMNIST-0.17%3A+MNIST+classifier+with+average+0.17%25+error&amp;rft.date=2020-02-25&amp;rft_id=https%3A%2F%2Fgithub.com%2FMatuzas77%2FMNIST-0.17.git&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MNIST_database&amp;action=edit&amp;section=6" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1067248974"/><cite id="CITEREFCiresanMeierSchmidhuber2012" class="citation book cs1">Ciresan, Dan; Meier, Ueli; Schmidhuber, Jürgen (June 2012). <a rel="nofollow" class="external text" href="http://repository.supsi.ch/5145/1/IDSIA-04-12.pdf">"Multi-column deep neural networks for image classification"</a> <span class="cs1-format">(PDF)</span>. <i>2012 IEEE Conference on Computer Vision and Pattern Recognition</i>. New York, NY: <a href="/wiki/Institute_of_Electrical_and_Electronics_Engineers" title="Institute of Electrical and Electronics Engineers">Institute of Electrical and Electronics Engineers</a>. pp.&#160;3642–3649. <a href="/wiki/ArXiv_(identifier)" class="mw-redirect" title="ArXiv (identifier)">arXiv</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//arxiv.org/abs/1202.2745">1202.2745</a></span>. <a href="/wiki/CiteSeerX_(identifier)" class="mw-redirect" title="CiteSeerX (identifier)">CiteSeerX</a>&#160;<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="//citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.300.3283">10.1.1.300.3283</a></span>. <a href="/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<a rel="nofollow" class="external text" href="https://doi.org/10.1109%2FCVPR.2012.6248110">10.1109/CVPR.2012.6248110</a>. <a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/9781467312264" title="Special:BookSources/9781467312264"><bdi>9781467312264</bdi></a>. <a href="/wiki/OCLC_(identifier)" class="mw-redirect" title="OCLC (identifier)">OCLC</a>&#160;<a rel="nofollow" class="external text" href="//www.worldcat.org/oclc/812295155">812295155</a>. <a href="/wiki/S2CID_(identifier)" class="mw-redirect" title="S2CID (identifier)">S2CID</a>&#160;<a rel="nofollow" class="external text" href="https://api.semanticscholar.org/CorpusID:2161592">2161592</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2013-12-09</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Multi-column+deep+neural+networks+for+image+classification&amp;rft.btitle=2012+IEEE+Conference+on+Computer+Vision+and+Pattern+Recognition&amp;rft.place=New+York%2C+NY&amp;rft.pages=3642-3649&amp;rft.pub=Institute+of+Electrical+and+Electronics+Engineers&amp;rft.date=2012-06&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A2161592%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2FCVPR.2012.6248110&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.300.3283%23id-name%3DCiteSeerX&amp;rft_id=info%3Aoclcnum%2F812295155&amp;rft_id=info%3Aarxiv%2F1202.2745&amp;rft.isbn=9781467312264&amp;rft.aulast=Ciresan&amp;rft.aufirst=Dan&amp;rft.au=Meier%2C+Ueli&amp;rft.au=Schmidhuber%2C+J%C3%BCrgen&amp;rft_id=http%3A%2F%2Frepository.supsi.ch%2F5145%2F1%2FIDSIA-04-12.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AMNIST+database" class="Z3988"></span></li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=MNIST_database&amp;action=edit&amp;section=7" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="http://yann.lecun.com/exdb/mnist/">Official website</a></span></span> <a href="https://www.wikidata.org/wiki/Q17069496#P856" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" style="vertical-align: text-top" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></li>
+<li><a rel="nofollow" class="external text" href="http://myselph.de/neuralNet.html">Neural Net for Handwritten Digit Recognition in JavaScript</a>&#160;&#8211;&#32; a JavaScript implementation of a neural network for handwritten digit classification based on the MNIST database</li>
+<li><a rel="nofollow" class="external text" href="https://github.com/mbornet-hl/MNIST/tree/master/IMAGES/GROUPS">Visualization of the MNIST database</a>&#160;&#8211;&#32; groups of images of MNIST handwritten digits on GitHub</li></ul>
+<div class="navbox-styles nomobile"><style data-mw-deduplicate="TemplateStyles:r1061467846">.mw-parser-output .navbox{box-sizing:border-box;border:1px solid #a2a9b1;width:100%;clear:both;font-size:88%;text-align:center;padding:1px;margin:1em auto 0}.mw-parser-output .navbox .navbox{margin-top:0}.mw-parser-output .navbox+.navbox,.mw-parser-output .navbox+.navbox-styles+.navbox{margin-top:-1px}.mw-parser-output .navbox-inner,.mw-parser-output .navbox-subgroup{width:100%}.mw-parser-output .navbox-group,.mw-parser-output .navbox-title,.mw-parser-output .navbox-abovebelow{padding:0.25em 1em;line-height:1.5em;text-align:center}.mw-parser-output .navbox-group{white-space:nowrap;text-align:right}.mw-parser-output .navbox,.mw-parser-output .navbox-subgroup{background-color:#fdfdfd}.mw-parser-output .navbox-list{line-height:1.5em;border-color:#fdfdfd}.mw-parser-output .navbox-list-with-group{text-align:left;border-left-width:2px;border-left-style:solid}.mw-parser-output tr+tr>.navbox-abovebelow,.mw-parser-output tr+tr>.navbox-group,.mw-parser-output tr+tr>.navbox-image,.mw-parser-output tr+tr>.navbox-list{border-top:2px solid #fdfdfd}.mw-parser-output .navbox-title{background-color:#ccf}.mw-parser-output .navbox-abovebelow,.mw-parser-output .navbox-group,.mw-parser-output .navbox-subgroup .navbox-title{background-color:#ddf}.mw-parser-output .navbox-subgroup .navbox-group,.mw-parser-output .navbox-subgroup .navbox-abovebelow{background-color:#e6e6ff}.mw-parser-output .navbox-even{background-color:#f7f7f7}.mw-parser-output .navbox-odd{background-color:transparent}.mw-parser-output .navbox .hlist td dl,.mw-parser-output .navbox .hlist td ol,.mw-parser-output .navbox .hlist td ul,.mw-parser-output .navbox td.hlist dl,.mw-parser-output .navbox td.hlist ol,.mw-parser-output .navbox td.hlist ul{padding:0.125em 0}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style></div><div role="navigation" class="navbox" aria-labelledby="Differentiable_computing" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><style data-mw-deduplicate="TemplateStyles:r1063604349">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Differentiable_computing" title="Template:Differentiable computing"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Differentiable_computing" title="Template talk:Differentiable computing"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Differentiable_computing&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Differentiable_computing" style="font-size:114%;margin:0 4em">Differentiable computing</div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Differentiable_function" title="Differentiable function">General</a></th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Differentiable_programming" title="Differentiable programming">Differentiable programming</a></li>
+<li><a href="/wiki/Neural_Turing_machine" title="Neural Turing machine">Neural Turing machine</a></li>
+<li><a href="/wiki/Differentiable_neural_computer" title="Differentiable neural computer">Differentiable neural computer</a></li>
+<li><a href="/wiki/Automatic_differentiation" title="Automatic differentiation">Automatic differentiation</a></li>
+<li><a href="/wiki/Neuromorphic_engineering" title="Neuromorphic engineering">Neuromorphic engineering</a></li>
+<li><a href="/wiki/Cable_theory" title="Cable theory">Cable theory</a></li>
+<li><a href="/wiki/Pattern_recognition" title="Pattern recognition">Pattern recognition</a></li>
+<li><a href="/wiki/Computational_learning_theory" title="Computational learning theory">Computational learning theory</a></li>
+<li><a href="/wiki/Tensor_calculus" title="Tensor calculus">Tensor calculus</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Concepts</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Gradient_descent" title="Gradient descent">Gradient descent</a>
+<ul><li><a href="/wiki/Stochastic_gradient_descent" title="Stochastic gradient descent">SGD</a></li></ul></li>
+<li><a href="/wiki/Cluster_analysis" title="Cluster analysis">Clustering</a></li>
+<li><a href="/wiki/Regression_analysis" title="Regression analysis">Regression</a>
+<ul><li><a href="/wiki/Overfitting" title="Overfitting">Overfitting</a></li></ul></li>
+<li><a href="/wiki/Adversarial_machine_learning" title="Adversarial machine learning">Adversary</a></li>
+<li><a href="/wiki/Attention_(machine_learning)" title="Attention (machine learning)">Attention</a></li>
+<li><a href="/wiki/Convolution" title="Convolution">Convolution</a></li>
+<li><a href="/wiki/Loss_functions_for_classification" title="Loss functions for classification">Loss functions</a></li>
+<li><a href="/wiki/Backpropagation" title="Backpropagation">Backpropagation</a></li>
+<li><a href="/wiki/Batch_normalization" title="Batch normalization">Normalization</a></li>
+<li><a href="/wiki/Activation_function" title="Activation function">Activation</a>
+<ul><li><a href="/wiki/Softmax_function" title="Softmax function">Softmax</a></li>
+<li><a href="/wiki/Sigmoid_function" title="Sigmoid function">Sigmoid</a></li>
+<li><a href="/wiki/Rectifier_(neural_networks)" title="Rectifier (neural networks)">Rectifier</a></li></ul></li>
+<li><a href="/wiki/Regularization_(mathematics)" title="Regularization (mathematics)">Regularization</a></li>
+<li><a href="/wiki/Training,_validation,_and_test_sets" title="Training, validation, and test sets">Datasets</a>
+<ul><li><a href="/wiki/Data_augmentation" title="Data augmentation">Augmentation</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Programming languages</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="/wiki/Julia_(programming_language)" title="Julia (programming language)">Julia</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Application</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Machine_learning" title="Machine learning">Machine learning</a></li>
+<li><a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural network</a>
+<ul><li><a href="/wiki/Deep_learning" title="Deep learning">Deep learning</a></li></ul></li>
+<li><a href="/wiki/Computational_science" title="Computational science">Scientific computing</a></li>
+<li><a href="/wiki/Artificial_intelligence" title="Artificial intelligence">Artificial Intelligence</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Hardware</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Graphcore" title="Graphcore">IPU</a></li>
+<li><a href="/wiki/Tensor_Processing_Unit" title="Tensor Processing Unit">TPU</a></li>
+<li><a href="/wiki/Vision_processing_unit" title="Vision processing unit">VPU</a></li>
+<li><a href="/wiki/Memristor" title="Memristor">Memristor</a></li>
+<li><a href="/wiki/SpiNNaker" title="SpiNNaker">SpiNNaker</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Software library</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/TensorFlow" title="TensorFlow">TensorFlow</a></li>
+<li><a href="/wiki/PyTorch" title="PyTorch">PyTorch</a></li>
+<li><a href="/wiki/Keras" title="Keras">Keras</a></li>
+<li><a href="/wiki/Theano_(software)" title="Theano (software)">Theano</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Implementation</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%">Audio-visual</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/AlexNet" title="AlexNet">AlexNet</a></li>
+<li><a href="/wiki/WaveNet" title="WaveNet">WaveNet</a></li>
+<li><a href="/wiki/Human_image_synthesis" title="Human image synthesis">Human image synthesis</a></li>
+<li><a href="/wiki/Handwriting_recognition" title="Handwriting recognition">HWR</a></li>
+<li><a href="/wiki/Optical_character_recognition" title="Optical character recognition">OCR</a></li>
+<li><a href="/wiki/Speech_synthesis" title="Speech synthesis">Speech synthesis</a></li>
+<li><a href="/wiki/Speech_recognition" title="Speech recognition">Speech recognition</a></li>
+<li><a href="/wiki/Facial_recognition_system" title="Facial recognition system">Facial recognition</a></li>
+<li><a href="/wiki/AlphaFold" title="AlphaFold">AlphaFold</a></li>
+<li><a href="/wiki/DALL-E" title="DALL-E">DALL-E</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Verbal</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Word2vec" title="Word2vec">Word2vec</a></li>
+<li><a href="/wiki/Transformer_(machine_learning_model)" title="Transformer (machine learning model)">Transformer</a></li>
+<li><a href="/wiki/BERT_(language_model)" title="BERT (language model)">BERT</a></li>
+<li><a href="/wiki/Neural_machine_translation" title="Neural machine translation">NMT</a></li>
+<li><a href="/wiki/Project_Debater" title="Project Debater">Project Debater</a></li>
+<li><a href="/wiki/Watson_(computer)" title="Watson (computer)">Watson</a></li>
+<li><a href="/wiki/GPT-2" title="GPT-2">GPT-2</a></li>
+<li><a href="/wiki/GPT-3" title="GPT-3">GPT-3</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Decisional</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/AlphaGo" title="AlphaGo">AlphaGo</a></li>
+<li><a href="/wiki/AlphaZero" title="AlphaZero">AlphaZero</a></li>
+<li><a href="/wiki/Q-learning" title="Q-learning">Q-learning</a></li>
+<li><a href="/wiki/State%E2%80%93action%E2%80%93reward%E2%80%93state%E2%80%93action" title="State–action–reward–state–action">SARSA</a></li>
+<li><a href="/wiki/OpenAI_Five" title="OpenAI Five">OpenAI Five</a></li>
+<li><a href="/wiki/Self-driving_car" title="Self-driving car">Self-driving car</a></li>
+<li><a href="/wiki/MuZero" title="MuZero">MuZero</a></li>
+<li><a href="/wiki/Action_selection" title="Action selection">Action selection</a></li>
+<li><a href="/wiki/Robot_control" title="Robot control">Robot control</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">People</th><td class="navbox-list-with-group navbox-list navbox-even" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Alex_Graves_(computer_scientist)" title="Alex Graves (computer scientist)">Alex Graves</a></li>
+<li><a href="/wiki/Ian_Goodfellow" title="Ian Goodfellow">Ian Goodfellow</a></li>
+<li><a href="/wiki/Yoshua_Bengio" title="Yoshua Bengio">Yoshua Bengio</a></li>
+<li><a href="/wiki/Geoffrey_Hinton" title="Geoffrey Hinton">Geoffrey Hinton</a></li>
+<li><a href="/wiki/Yann_LeCun" title="Yann LeCun">Yann LeCun</a></li>
+<li><a href="/wiki/Andrew_Ng" title="Andrew Ng">Andrew Ng</a></li>
+<li><a href="/wiki/Demis_Hassabis" title="Demis Hassabis">Demis Hassabis</a></li>
+<li><a href="/wiki/David_Silver_(computer_scientist)" title="David Silver (computer scientist)">David Silver</a></li>
+<li><a href="/wiki/Fei-Fei_Li" title="Fei-Fei Li">Fei-Fei Li</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Organizations</th><td class="navbox-list-with-group navbox-list navbox-odd" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/DeepMind" title="DeepMind">DeepMind</a></li>
+<li><a href="/wiki/OpenAI" title="OpenAI">OpenAI</a></li>
+<li><a href="/wiki/MIT_Computer_Science_and_Artificial_Intelligence_Laboratory" title="MIT Computer Science and Artificial Intelligence Laboratory">MIT CSAIL</a></li>
+<li><a href="/wiki/Mila_(research_institute)" title="Mila (research institute)">Mila</a></li>
+<li><a href="/wiki/Google_Brain" title="Google Brain">Google Brain</a></li>
+<li><a href="https://fr.wikipedia.org/wiki/Facebook_Artificial_Intelligence_Research" class="extiw" title="fr:Facebook Artificial Intelligence Research">FAIR</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="2"><div>
+<ul><li><a href="/wiki/File:Symbol_portal_class.svg" class="image" title="Portal"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/e/e2/Symbol_portal_class.svg/16px-Symbol_portal_class.svg.png" decoding="async" width="16" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/e/e2/Symbol_portal_class.svg/23px-Symbol_portal_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/e/e2/Symbol_portal_class.svg/31px-Symbol_portal_class.svg.png 2x" data-file-width="180" data-file-height="185" /></a> Portals
+<ul><li><a href="/wiki/Portal:Computer_programming" title="Portal:Computer programming">Computer programming</a></li>
+<li><a href="/wiki/Portal:Technology" title="Portal:Technology">Technology</a></li></ul></li>
+<li><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/16px-Symbol_category_class.svg.png" decoding="async" title="Category" width="16" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/23px-Symbol_category_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/96/Symbol_category_class.svg/31px-Symbol_category_class.svg.png 2x" data-file-width="180" data-file-height="185" /> Category
+<ul><li><a href="/wiki/Category:Artificial_neural_networks" title="Category:Artificial neural networks">Artificial neural networks</a></li>
+<li><a href="/wiki/Category:Machine_learning" title="Category:Machine learning">Machine learning</a></li></ul></li></ul>
+</div></td></tr></tbody></table></div>
+<div class="navbox-styles nomobile"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1061467846"/></div><div role="navigation" class="navbox" aria-labelledby="Standard_test_items" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1063604349"/><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Standard_test_item" title="Template:Standard test item"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Standard_test_item" title="Template talk:Standard test item"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Standard_test_item&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Standard_test_items" style="font-size:114%;margin:0 4em">Standard test items</div></th></tr><tr><td class="navbox-abovebelow hlist" colspan="2"><div id="*_Pangram_*_Reference_implementation_*_Sanity_check_*_Standard_test_image">
+<ul><li><a href="/wiki/Pangram" title="Pangram">Pangram</a></li>
+<li><a href="/wiki/Reference_implementation" title="Reference implementation">Reference implementation</a></li>
+<li><a href="/wiki/Sanity_check" title="Sanity check">Sanity check</a></li>
+<li><a href="/wiki/Standard_test_image" title="Standard test image">Standard test image</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Artificial_intelligence" title="Artificial intelligence">Artificial intelligence</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Chinese_room" title="Chinese room">Chinese room</a></li>
+<li><a href="/wiki/Turing_test" title="Turing test">Turing test</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Television (<a href="/wiki/Test_card" title="Test card">test card</a>)</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/SMPTE_color_bars" title="SMPTE color bars">SMPTE color bars</a></li>
+<li><a href="/wiki/Indian-head_test_pattern" title="Indian-head test pattern">Indian-head test pattern</a></li>
+<li><a href="/wiki/List_of_BBC_test_cards" title="List of BBC test cards">BBC Test Card</a> <a href="/wiki/List_of_BBC_test_cards#Test_Card_A" title="List of BBC test cards">A</a>, <a href="/wiki/List_of_BBC_test_cards#Test_Card_B" title="List of BBC test cards">B</a>, <a href="/wiki/List_of_BBC_test_cards#Test_Card_C" title="List of BBC test cards">C</a>, <a href="/wiki/List_of_BBC_test_cards#Test_Card_D" title="List of BBC test cards">D</a>, <a href="/wiki/List_of_BBC_test_cards#Test_Card_E_(later_Test_Card_C)" title="List of BBC test cards">E</a>, <a href="/wiki/Test_Card_F" title="Test Card F">F</a>, <a href="/wiki/List_of_BBC_test_cards#Test_Card_G" title="List of BBC test cards">G</a>, <a href="/wiki/List_of_BBC_test_cards#Test_Card_H" title="List of BBC test cards">H</a>, <a href="/wiki/Test_Card_G" class="mw-redirect" title="Test Card G">G</a>, <a href="/wiki/Test_Card_W" class="mw-redirect" title="Test Card W">W</a>, <a href="/wiki/Test_Card_X" class="mw-redirect" title="Test Card X">X</a></li>
+<li><a href="/wiki/ETP-1" title="ETP-1">ETP-1</a></li>
+<li><a href="/wiki/Philips" title="Philips">Philips</a> <a href="/wiki/Philips_PM5544#PM5538" title="Philips PM5544">PM 5538</a> <a href="/wiki/Philips_PM5540" title="Philips PM5540">PM 5540</a>, PM 5552, <a href="/wiki/Philips_PM5544" title="Philips PM5544">PM 5544</a>, <a href="/wiki/Philips_PM5544#PM5644_(widescreen)" title="Philips PM5544">PM 5644</a></li>
+<li><a href="/wiki/Telefunken_FuBK" title="Telefunken FuBK">Telefunken FuBK</a></li>
+<li><a href="/wiki/TVE_test_card" title="TVE test card">TVE test card</a></li>
+<li><a href="/wiki/UEIT_-_Universal_Electronic_Test_Chart" title="UEIT - Universal Electronic Test Chart">UEIT</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Computer_language" title="Computer language">Computer languages</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/%22Hello,_World!%22_program" title="&quot;Hello, World!&quot; program">"Hello, World!" program</a></li>
+<li><a href="/wiki/Quine_(computing)" title="Quine (computing)">Quine</a></li>
+<li><a href="/wiki/TPK_algorithm" title="TPK algorithm">Trabb Pardo–Knuth algorithm</a></li>
+<li><a href="/wiki/Man_or_boy_test" title="Man or boy test">Man or boy test</a></li>
+<li><a href="/wiki/Just_another_Perl_hacker" title="Just another Perl hacker">Just another Perl hacker</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Data_compression" title="Data compression">Data compression</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Calgary_corpus" title="Calgary corpus">Calgary corpus</a></li>
+<li><a href="/wiki/Canterbury_corpus" title="Canterbury corpus">Canterbury corpus</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/3D_computer_graphics" title="3D computer graphics">3D computer graphics</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Cornell_box" title="Cornell box">Cornell box</a></li>
+<li><a href="/wiki/Stanford_bunny" title="Stanford bunny">Stanford bunny</a></li>
+<li><a href="/wiki/Stanford_dragon" title="Stanford dragon">Stanford dragon</a></li>
+<li><a href="/wiki/Utah_teapot" title="Utah teapot">Utah teapot</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Machine_learning" title="Machine learning">Machine learning</a></th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/ImageNet" title="ImageNet">ImageNet</a></li>
+<li><a class="mw-selflink selflink">MNIST database</a></li>
+<li><a href="/wiki/List_of_datasets_for_machine-learning_research" title="List of datasets for machine-learning research">List</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Typography" title="Typography">Typography</a></th><td class="navbox-list-with-group navbox-list navbox-odd hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Hamburgevons" title="Hamburgevons">Hamburgevons</a></li>
+<li><a href="/wiki/Lorem_ipsum" title="Lorem ipsum">Lorem ipsum</a></li>
+<li><a href="/wiki/The_quick_brown_fox_jumps_over_the_lazy_dog" title="The quick brown fox jumps over the lazy dog">The quick brown fox jumps over the lazy dog</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Other</th><td class="navbox-list-with-group navbox-list navbox-even hlist" style="width:100%;padding:0"><div style="padding:0 0.25em">
+<ul><li><a href="/wiki/Acid3" title="Acid3">Acid3</a></li>
+<li><a href="/wiki/Bad_Apple!!" title="Bad Apple!!">"Bad Apple!!"</a></li>
+<li><a href="/wiki/EICAR_test_file" title="EICAR test file">EICAR test file</a></li>
+<li><a href="/wiki/GTUBE" title="GTUBE">GTUBE</a></li>
+<li><a href="/wiki/Harvard_sentences" title="Harvard sentences">Harvard sentences</a></li>
+<li><a href="/wiki/Lenna" title="Lenna">Lenna</a></li>
+<li><a href="/wiki/The_North_Wind_and_the_Sun#Use_in_phonetic_demonstrations" title="The North Wind and the Sun">"The North Wind and the Sun"</a></li>
+<li><a href="/wiki/Tom%27s_Diner#The_&quot;Mother_of_the_MP3&quot;" title="Tom&#39;s Diner">"Tom's Diner"</a></li>
+<li><a href="/wiki/Film_leader" title="Film leader">SMPTE universal leader</a></li>
+<li><a href="/wiki/EURion_constellation" title="EURion constellation">EURion constellation</a></li>
+<li><a href="/wiki/Shakedown_(testing)" title="Shakedown (testing)">Shakedown</a></li>
+<li><a href="/wiki/Webdriver_Torso" title="Webdriver Torso">Webdriver Torso</a></li>
+<li><a href="/wiki/1951_USAF_resolution_test_chart" title="1951 USAF resolution test chart">1951 USAF resolution test chart</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1315
+Cached time: 20220217091515
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.758 seconds
+Real time usage: 0.849 seconds
+Preprocessor visited node count: 2320/1000000
+Post‐expand include size: 117066/2097152 bytes
+Template argument size: 924/2097152 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 0/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 117678/5000000 bytes
+Lua time usage: 0.406/10.000 seconds
+Lua memory usage: 5542184/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  686.539      1 -total
+ 61.23%  420.385      1 Template:Reflist
+ 27.70%  190.170     15 Template:Cite_web
+ 16.73%  114.870     13 Template:Cite_journal
+ 13.33%   91.498      3 Template:Navbox
+ 12.74%   87.480      1 Template:Short_description
+ 12.41%   85.200      1 Template:Differentiable_computing
+  6.17%   42.340      1 Template:Pagetype
+  4.64%   31.835      4 Template:Cite_book
+  3.21%   22.043      4 Template:Main_other
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:40267442-0!canonical and timestamp 20220217091514 and revision id 1071064522. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=MNIST_database&amp;oldid=1071064522">https://en.wikipedia.org/w/index.php?title=MNIST_database&amp;oldid=1071064522</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Artificial_intelligence" title="Category:Artificial intelligence">Artificial intelligence</a></li><li><a href="/wiki/Category:Datasets_in_computer_vision" title="Category:Datasets in computer vision">Datasets in computer vision</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">Short description matches Wikidata</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span>Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=MNIST+database" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=MNIST+database" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/MNIST_database" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:MNIST_database" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">English</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/MNIST_database"><span>Read</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=MNIST_database&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=MNIST_database&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" icon="home" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" icon="die" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<h3 id="p-interaction-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Contribute</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" icon="help" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" icon="recentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/MNIST_database" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/MNIST_database" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=MNIST_database&amp;oldid=1071064522" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=MNIST_database&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=MNIST_database&amp;id=1071064522&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q17069496" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</nav>
+
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<h3 id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Print/export</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=MNIST_database&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=MNIST_database&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<h3 id="p-lang-label" aria-label="" class="vector-menu-heading">
+		<span class="vector-menu-heading-label">Languages</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Base_de_dades_MINIST" title="Base de dades MINIST – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/MNIST-Datenbank" title="MNIST-Datenbank – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D9%BE%D8%A7%DB%8C%DA%AF%D8%A7%D9%87_%D8%AF%D8%A7%D8%AF%D9%87_%D8%A7%D9%85%E2%80%8C%D8%A7%D9%86%E2%80%8C%D8%A2%DB%8C%E2%80%8C%D8%A7%D8%B3%E2%80%8C%D8%AA%DB%8C" title="پایگاه داده ام‌ان‌آی‌اس‌تی – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Base_de_donn%C3%A9es_MNIST" title="Base de données MNIST – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/MNIST_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4" title="MNIST 데이터베이스 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/MNIST_database" title="MNIST database – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/MNIST%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9" title="MNISTデータベース – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/MNIST_(%D0%B1%D0%B0%D0%B7%D0%B0_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)" title="MNIST (база данных) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/MNIST_(%D0%B1%D0%B0%D0%B7%D0%B0_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)" title="MNIST (база даних) – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/C%C6%A1_s%E1%BB%9F_d%E1%BB%AF_li%E1%BB%87u_MNIST" title="Cơ sở dữ liệu MNIST – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh-yue mw-list-item"><a href="https://zh-yue.wikipedia.org/wiki/MNIST%E6%95%B8%E6%93%9A%E9%9B%86" title="MNIST數據集 – Cantonese" lang="yue" hreflang="yue" class="interlanguage-link-target"><span>粵語</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q17069496#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 10 February 2022, at 17:49<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License 3.0</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=MNIST_database&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.758","walltime":"0.849","ppvisitednodes":{"value":2320,"limit":1000000},"postexpandincludesize":{"value":117066,"limit":2097152},"templateargumentsize":{"value":924,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":117678,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  686.539      1 -total"," 61.23%  420.385      1 Template:Reflist"," 27.70%  190.170     15 Template:Cite_web"," 16.73%  114.870     13 Template:Cite_journal"," 13.33%   91.498      3 Template:Navbox"," 12.74%   87.480      1 Template:Short_description"," 12.41%   85.200      1 Template:Differentiable_computing","  6.17%   42.340      1 Template:Pagetype","  4.64%   31.835      4 Template:Cite_book","  3.21%   22.043      4 Template:Main_other"]},"scribunto":{"limitreport-timeusage":{"value":"0.406","limit":"10.000"},"limitreport-memusage":{"value":5542184,"limit":52428800}},"cachereport":{"origin":"mw1315","timestamp":"20220217091515","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"MNIST database","url":"https:\/\/en.wikipedia.org\/wiki\/MNIST_database","sameAs":"http:\/\/www.wikidata.org\/entity\/Q17069496","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q17069496","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2013-08-17T14:50:39Z","dateModified":"2022-02-10T17:49:17Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/2\/27\/MnistExamples.png","headline":"database of handwritten digits"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":126,"wgHostname":"mw1429"});});</script>
+</body>
+</html>
