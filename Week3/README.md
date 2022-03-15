@@ -1,5 +1,7 @@
 # Week 3
 
+Representing Signals
+
 ### Pre-reading
 
 **Sampling**
@@ -24,6 +26,8 @@
 2. Bases, Transformation, the DFT, Symmetry and Invariance
 
 3. Convolutions and filtering (and a mention of noise)
+
+4. Extras (if time): More on noise and Entropy, AEP and compression
 
 ### Code
 
