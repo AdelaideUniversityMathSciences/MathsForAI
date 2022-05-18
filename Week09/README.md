@@ -14,4 +14,3 @@ We'll play around with compressive_sensing_example.ipynb in the Code directory o
 ### Papers
 - Importance of sparse encoding: https://openreview.net/forum?id=By4afoWO-B 
 - A guide to convolution arithmetic for deep learning: https://arxiv.org/abs/1603.07285 
-- 
