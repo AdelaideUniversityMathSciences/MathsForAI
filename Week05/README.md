@@ -1,44 +1,15 @@
-# Week 5
-
-Why is nothing ever really certain?
-
-In this section I will assume you have done several subjects on
-probability and statistics, so this is a gloss to help you translate
-what you know into a new context. 
+# Week 7
 
 ### Topics
 
-1. Probability spaces
-2. Challenging Data
-   1. Noise and denoising
-   2. Fast Data and Randomised algorithms
-      1. Hashes and fast data and sketches
-      2. Fast and Wide: Compressive sensing (part 1) and embeddings
+1. Challenges of optimisation for neural nets
+2. Advanced optimisation algorithms: Momentum, Nesterov momentum, adaptive gradient methods
+3. BatchNorm (if time, probably not)
 
+We'll refer to and play around with the compareOptimisationAlgos.ipynb in the Code directory of this repo.
 
-### Reading
-
-+ Probability spaces and distances in those spaces
-
-  + Probability spaces: http://planning.cs.uiuc.edu/node432.html
-  + Distances on probabilities: https://danmackinlay.name/notebook/probability_metrics.html
-  
-+ Noise
-
-  + https://vciba.springeropen.com/track/pdf/10.1186/s42492-019-0016-7.pdf 
-
-+ Fast data
-
-  + https://www.wired.com/insights/2013/04/big-data-fast-data-smart-data/
-
-+ Randomised algorithms
-
-  + https://brilliant.org/wiki/randomized-algorithms-overview/
-  + https://www.geeksforgeeks.org/randomized-algorithms-set-3-12-approximate-median/
-
-+ Recursion
-
-  + https://www.analog.com/media/en/technical-documentation/dsp-book/dsp_book_Ch19.pdf
-  + https://machinelearningmastery.com/an-introduction-to-recurrent-neural-networks-and-the-math-that-powers-them/
-  
-
+### Links
+- Roger Grosse's course on *Neural Net Training Dynamics at the University of Toronto, CSC2541*: https://www.cs.toronto.edu/~rgrosse/courses/csc2541_2021/ I borrowed some of the explanation of momentum from this
+- Gabriel Goh, *Why momentum really works*: https://distill.pub/2017/momentum/
+- Fabian Pedregosa, *A birds-eye view of optimization algorithms*: https://fa.bianp.net/teaching/2018/eecs227at/
+- Benoit Liquet, Sarat Moka, and Yoni Nazarathy, *The Mathematical Engineering of Deep Learning*, Chapter 3: https://deeplearningmath.org/optimization-algorithms.html 

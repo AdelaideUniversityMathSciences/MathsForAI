@@ -1,12 +1,14 @@
-# Week 6
+# Week 8
 
 ### Topics
 
-1. Deep feedforward networks
-2. Backpropagation
-3. Doing it in PyTorch
-4. Project
+1. BatchNorm (a teeny tiny bit)
+2. Regularisation recap
+3. Bias-variance
+4. Regularisation in DL
+5. Maths of dropout
 
-### Reading
-Higham & Higham, "Deep Learning: An Introduction for Applied Mathematicians" (P141.pdf above)
+We'll play around with the dropout_example.ipynb in the Code directory of this repo.
 
+### Papers
+2 papers on dropout in this directory. The single linear activation example in the NeurIPS paper is particularly helpful to illustrate why dropout works.

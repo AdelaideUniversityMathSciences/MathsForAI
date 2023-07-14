@@ -1,15 +1,46 @@
-# Week 7
+# Week 4
 
-### Topics
+The Search for Spock. Sorry, no I meant the search for Sparstiy.
 
-1. Challenges of optimisation for neural nets
-2. Advanced optimisation algorithms: Momentum, Nesterov momentum, adaptive gradient methods
-3. BatchNorm (if time, probably not)
+### Topics 
 
-We'll refer to and play around with the compareOptimisationAlgos.ipynb in the Code directory of this repo.
+1. Search for sparsity: what and why?
+2. Eigenvalues, Decomposition, Singular Values, SVD, PCA
+3. Embedding and dimension reduction
+3. Denoising through sparsity
 
-### Links
-- Roger Grosse's course on *Neural Net Training Dynamics at the University of Toronto, CSC2541*: https://www.cs.toronto.edu/~rgrosse/courses/csc2541_2021/ I borrowed some of the explanation of momentum from this
-- Gabriel Goh, *Why momentum really works*: https://distill.pub/2017/momentum/
-- Fabian Pedregosa, *A birds-eye view of optimization algorithms*: https://fa.bianp.net/teaching/2018/eecs227at/
-- Benoit Liquet, Sarat Moka, and Yoni Nazarathy, *The Mathematical Engineering of Deep Learning*, Chapter 3: https://deeplearningmath.org/optimization-algorithms.html 
+### Reading
+
+1. SVD
+
++ https://gregorygundersen.com/blog/2018/12/10/svd/
++ https://dustinstansbury.github.io/theclevermachine/singular-value-decomposition
+
+2. PCA
+
++ https://intoli.com/blog/pca-and-svd/
+
+3. Embedding and dimension reduction
+
++ PCA: 
+
+	+ https://machinelearningmastery.com/principal-components-analysis-for-dimensionality-reduction-in-python/
+	+ https://www.analyticsvidhya.com/blog/2021/02/diminishing-the-dimensions-with-pca/
+	
++ MDS:
+	
+	+ https://stats.stackexchange.com/questions/224383/learning-vector-embeddings-from-distances#:~:text=The%20method%20you're%20looking,as%20input%2C%20only%20pairwise%20distances.
+	+ https://medium.datadriveninvestor.com/the-multidimensional-scaling-mds-algorithm-for-dimensionality-reduction-9211f7fa5345
+
++ Word2vec
+
+	+ https://jalammar.github.io/illustrated-word2vec/
+	
+	
++ Transformer networks
+
+	+ https://jalammar.github.io/illustrated-transformer/
+
+		
+ 
+ 
