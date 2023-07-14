@@ -1,6 +1,8 @@
 # Week 9
 
-This week is the last week of Module 2 on the mathematics of deep learning. We revisit compressive sensing, as a nice example of the optimisation + regularisation topics we've talked about in the past 2 weeks. We also introduce convolution in the context of neural networks, to connect back to Module 1, and also through to Module 3 on modern ML.
+*Tentative plan for 2023: include some content from Simon's Week 10 lectures from 2022 on deepness and convolution, to create some space later on for discussion of LLMs.*
+
+This week we revisit compressive sensing, as a nice example of the optimisation + regularisation topics we've talked about previously. We also introduce convolution in the context of neural networks, to connect back to the start of the course, and also through to the next section on modern ML.
 
 ### Topics
 
