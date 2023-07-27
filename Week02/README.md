@@ -77,7 +77,7 @@ We could put a lot more here in an intro to the math we will use: e.g.,
 + Complex numbers and spaces
 + Information Theory
 
-There is a worksheet -- [Assignment 0](assignment_0.pdf) for you to test your knnowledge. It is not assessed, but might be helpful to make sure you get the foundational work.
+There is a worksheet -- [Assignment 0](assignment_0.pdf) -- for you to test your knnowledge. It is not assessed, but might be helpful to make sure you get the foundational work.
 
 ### Code to do in the workshop
 
