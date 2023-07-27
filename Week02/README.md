@@ -21,23 +21,24 @@ Please make sure to read it before the Week 2's workshop.
 
 Feel free to find other materials (but let me know so I can include them for others). 
 
-**Motivation:** I don't expect you to understand everything in these papers, but I would like you to understand why we need all of the material to follow:
+Also get yourself a free account on [openai.com](openai.com), then try out
+  
+  + ChatGPT
+  + Dall-E
+   
+**Motivation:** I don't expect you to understand everything in these papers, but I would like you to understand a little bit about why we do what follows. And by the end of the course, you can hopefully make sense of these.
 
   + https://arxiv.org/pdf/1801.05894.pdf
   + https://royalsocietypublishing.org/doi/pdf/10.1098/rsta.2015.0203
   + [shannon_1948.pdf](shannon_1948.pdf)
-  + Get yourself a free account on [openai.com](openai.com), then try out
-  
-  	 + ChatGPT
-  	 + Dall-E
-    
+ 
 **Vector spaces, inner products, norms, distances, orthogonality, basis**
     
+  + https://ai.stanford.edu/~gwthomas/notes/vector-spaces-linear-maps.pdf
+  + https://users.math.msu.edu/users/gnagy/teaching/05-fall/Math20F/w9-F.pdf
+  + https://ai.stanford.edu/~gwthomas/notes/norms-inner-products.pdf
   + [Vector_spaces.pdf](Vector_spaces.pdf) 
   + [Norms.pdf](Norms.pdf)
-  + https://users.math.msu.edu/users/gnagy/teaching/05-fall/Math20F/w9-F.pdf
-  + https://ai.stanford.edu/~gwthomas/notes/vector-spaces-linear-maps.pdf
-  + https://ai.stanford.edu/~gwthomas/notes/norms-inner-products.pdf
   + [glossary.pdf](glossary.pdf)
   
 **Linear transformations, projection**
@@ -46,19 +47,18 @@ Feel free to find other materials (but let me know so I can include them for oth
   
 **Rank**    
    
-  + [Rank.pdf](Rank.pdf)
   + https://nhigham.com/2021/02/23/matrix-rank-relations/ 
- 
+  + [Rank.pdf](Rank.pdf)
+
 **Tensors**
 
   + [Tensors.pdf](Tensors.pdf)
-  +   
 
 **Eigenvalues and vectors**
 
-  + [Eigenvalues\_and\_vectors.pdf](Eigenvalues_and_vectors.pdf)
   + https://lpsa.swarthmore.edu/MtrxVibe/EigMat/MatrixEigen.html 
   + https://www.adelaide.edu.au/mathslearning/ua/media/120/evalue-magic-tricks-handout.pdf
+  + [Eigenvalues\_and\_vectors.pdf](Eigenvalues_and_vectors.pdf)
 
 **Matrix condition number**
     
@@ -67,8 +67,8 @@ Feel free to find other materials (but let me know so I can include them for oth
 
 **The Johnson-Lindenstrauss lemma and the curse of dimensionality**
 
-  + [Johnson-Lindenstrauss.pdf](Johnson-Lindenstrauss.pdf)
   + https://builtin.com/data-science/curse-dimensionality
+  + [Johnson-Lindenstrauss.pdf](Johnson-Lindenstrauss.pdf)
 
 We could put a lot more here in an intro to the math we will use: e.g.,
 
