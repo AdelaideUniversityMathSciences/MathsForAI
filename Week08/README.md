@@ -1,7 +1,5 @@
 # Week 5
 
-*Tentative plan for 2023: include a section on attention into this week's content, possibly based on [Understanding Deep Learning](https://udlbook.github.io/udlbook/)*
-
 Why is nothing ever really certain?
 
 In this section I will assume you have done several subjects on

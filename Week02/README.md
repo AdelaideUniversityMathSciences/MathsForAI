@@ -33,7 +33,7 @@ Feel free to find other materials (but let me know so I can include them for oth
     
 **Vector spaces, inner products, norms, distances, orthogonality, basis**
     
-  + [Vector spaces.pdf](Vector spaces.pdf)
+  + [Vector_spaces.pdf](Vector_spaces.pdf) 
   + [Norms.pdf](Norms.pdf)
   + https://users.math.msu.edu/users/gnagy/teaching/05-fall/Math20F/w9-F.pdf
   + https://ai.stanford.edu/~gwthomas/notes/vector-spaces-linear-maps.pdf
@@ -56,6 +56,7 @@ Feel free to find other materials (but let me know so I can include them for oth
 
 **Eigenvalues and vectors**
 
+  + [Eigenvalues\_and\_vectors.pdf](Eigenvalues_and_vectors.pdf)
   + https://lpsa.swarthmore.edu/MtrxVibe/EigMat/MatrixEigen.html 
   + https://www.adelaide.edu.au/mathslearning/ua/media/120/evalue-magic-tricks-handout.pdf
 
@@ -80,11 +81,11 @@ We could put a lot more here in an intro to the math we will use: e.g.,
 ### Code to do in the workshop
 
 The code for the workshop is in the GitHub: 
-https://github.com/AdelaideUniversityMathSciences/MathsForAI/ 
+https://github.com/AdelaideUniversityMathSciences/MathsForAI/Code/
 
 There are a few bits to play with and these become the assignments:
 
-+ [basic_tensors.ipynb](../Code/basic_tensors.ipynb)
++ [basic_tensor.ipynb](../Code/basic_tensor.ipynb)
 + [Einstein.ipynb](../Code/Einstein.ipynb)
 + [Gaussian_Orthogonal_Ensemble.ipynb](../Code/Gaussian_Orthogonal_Ensemble.ipynb)
 + [timing.ipynb](../Code/timing.ipynb)
