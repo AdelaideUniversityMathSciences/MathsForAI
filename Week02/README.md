@@ -87,9 +87,9 @@ https://github.com/AdelaideUniversityMathSciences/MathsForAI/Code/
 There are a few bits to play with and these become the assignments:
 
 + [basic_tensor.ipynb](../Code/basic_tensor.ipynb)
++ [timing.ipynb](../Code/timing.ipynb)
 + [Einstein.ipynb](../Code/Einstein.ipynb)
 + [Gaussian_Orthogonal_Ensemble.ipynb](../Code/Gaussian_Orthogonal_Ensemble.ipynb)
-+ [timing.ipynb](../Code/timing.ipynb)
 + [nearest_neighbor.ipynb](../Code/nearest_neighbor.ipynb)
 + [non-linear.ipynb](../Code/non-linear.ipynb)
 
