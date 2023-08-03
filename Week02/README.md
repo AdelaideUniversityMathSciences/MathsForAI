@@ -24,7 +24,7 @@ Feel free to find other materials (but let me know so I can include them for oth
 Also get yourself a free account on [openai.com](openai.com), then try out
   
   + ChatGPT
-  + Dall-E
+  + Dall-E (Note: you can try out a free version of Dall-E at [Dall-E Mini](https://huggingface.co/spaces/dalle-mini/dalle-mini))
    
 **Motivation:** I don't expect you to understand everything in these papers, but I would like you to understand a little bit about why we do what follows. And by the end of the course, you can hopefully make sense of these.
 
