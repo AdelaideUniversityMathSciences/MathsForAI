@@ -1,4 +1,4 @@
-# Week 6
+# Introduction to deep learning
 
 ### Topics
 
