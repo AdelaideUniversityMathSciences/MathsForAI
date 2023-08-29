@@ -13,4 +13,4 @@ We might play around with the dropout_example.ipynb in the Code directory of thi
 ### Papers
 2 papers on dropout in this directory. The single linear activation example in the NeurIPS paper is particularly helpful to illustrate why dropout works.
 
-Most of the examples etc otherwise are from Prince (2023) [Understanding Deep Learning](https://udlbook.github.io/udlbook/
+Most of the examples etc otherwise are from Prince (2023) [Understanding Deep Learning](https://udlbook.github.io/udlbook/).
