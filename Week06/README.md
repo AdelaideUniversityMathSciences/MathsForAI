@@ -1,4 +1,4 @@
-# Week 8
+# Generalisation week: Sources of error and regularisation in deep learning
 
 ### Topics
 
