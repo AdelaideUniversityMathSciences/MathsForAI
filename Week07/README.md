@@ -1,4 +1,4 @@
-# Week 4
+# Week 7
 
 The Search for Spock. Sorry, no I meant the search for Sparstiy.
 
@@ -37,7 +37,7 @@ The Search for Spock. Sorry, no I meant the search for Sparstiy.
 	+ https://jalammar.github.io/illustrated-word2vec/
 	
 	
-+ Transformer networks
++ Transformers (optional)
 
 	+ https://jalammar.github.io/illustrated-transformer/
 
