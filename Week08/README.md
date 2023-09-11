@@ -20,7 +20,7 @@ what you know into a new context.
 
 + Probability spaces and distances in those spaces
 
-  + Probability spaces: http://planning.cs.uiuc.edu/node432.html
+  + Probability spaces: https://www.statlect.com/glossary/probability-space
   + Distances on probabilities: https://danmackinlay.name/notebook/probability_metrics.html
   
 + Noise
