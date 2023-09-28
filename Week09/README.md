@@ -4,12 +4,13 @@
 
 This week we revisit compressive sensing, as a nice example of the optimisation + regularisation topics we've talked about previously. We also introduce convolution in the context of neural networks, to connect back to the start of the course, and also through to the next section on modern ML.
 
+We will also spend a bit of time discussing the project/competition!!!
+
 ### Topics
 
 1. Sparse representations
 2. Compressive sensing
 3. Convolutions
-4. (if time) Sequence learning and RNNs
 
 We'll play around with compressive_sensing_example.ipynb in the Code directory of this repo.
 
