@@ -1,39 +1,12 @@
-# Week 3
-
-Representing Signals
-
-### Pre-reading
-
-**Sampling**
-
-+ "Communication in the Presence of Noise," C.E. Shannon, 1949, http://fab.cba.mit.edu/classes/S62.12/docs/Shannon_noise.pdf or https://web.archive.org/web/20100208112344/http://www.stanford.edu/class/ee104/shannonpaper.pdf
-
-**Fourier transforms**
-
-+ https://www.cv.nrao.edu/~sransom/web/A1.html
-+ https://ethz.ch/content/dam/ethz/special-interest/baug/ibk/structural-mechanics-dam/education/identmeth/fourier.pdf
-
-**Entropy and information theory**
-
-+ "A Mathematical Theory of Communication," C.E. Shannon, 1948, https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf
-+ https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf
-+ https://towardsdatascience.com/must-know-information-theory-concepts-in-deep-learning-ai-e54a5da9769d
+# Introduction to deep learning
 
 ### Topics
 
-1. Signals and Sampling (and a mention of noise)
+1. Deep feedforward networks
+2. Backpropagation
+3. Doing it in PyTorch: [https://github.com/AdelaideUniversityMathSciences/MathsForAI/blob/main/Code/Classification_MLP_2021.ipynb](https://github.com/AdelaideUniversityMathSciences/MathsForAI/blob/main/Code/Classification_MLP_2021.ipynb) 
+4. Learning XOR redux: [https://colab.research.google.com/drive/1gKPEny0nw5M733qDQNEO5tJpahYgd2vF?usp=sharing](https://colab.research.google.com/drive/1gKPEny0nw5M733qDQNEO5tJpahYgd2vF?usp=sharing) (from [Machine Learning for the Working Mathematician](https://sites.google.com/view/mlwm-seminar-2022), Week 1 workshop)
 
-2. Bases, Transformation, the DFT, Symmetry and Invariance
+### Reading
+Higham & Higham, "Deep Learning: An Introduction for Applied Mathematicians" (P141.pdf above)
 
-3. Convolutions and filtering (and a mention of noise)
-
-4. Extras (if time): More on noise and Entropy, AEP and compression
-
-### Code
-
-As before Code in that directory of the GitHub
-
-+ `shannon_interp.ipynb`
-+ `fft_example.ipynb`
-+ `audio_example.ipynb`
-+ `Noise_example.ipynb`

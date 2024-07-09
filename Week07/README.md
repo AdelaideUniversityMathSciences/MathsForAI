@@ -1,46 +1,44 @@
-# Week 7
+# Week 8
 
-The Search for Spock. Sorry, no I meant the search for Sparstiy.
+Why is nothing ever really certain?
 
-### Topics 
+In this section I will assume you have done several subjects on
+probability and statistics, so this is a gloss to help you translate
+what you know into a new context. 
 
-1. Search for sparsity: what and why?
-2. Eigenvalues, Decomposition, Singular Values, SVD, PCA
-3. Embedding and dimension reduction
-3. Denoising through sparsity
+### Topics
+
+1. Probability spaces
+2. Challenging Data
+   1. Noise and denoising
+   2. Fast Data and Randomised algorithms
+      1. Hashes and fast data and sketches
+      2. Fast and Wide: Compressive sensing (part 1) and embeddings
+
 
 ### Reading
 
-1. SVD
++ Probability spaces and distances in those spaces
 
-+ https://gregorygundersen.com/blog/2018/12/10/svd/
-+ https://dustinstansbury.github.io/theclevermachine/singular-value-decomposition
+  + Probability spaces: https://www.statlect.com/glossary/probability-space
+  + Distances on probabilities: https://danmackinlay.name/notebook/probability_metrics.html
+  
++ Noise
 
-2. PCA
+  + https://vciba.springeropen.com/track/pdf/10.1186/s42492-019-0016-7.pdf 
 
-+ https://intoli.com/blog/pca-and-svd/
++ Fast data
 
-3. Embedding and dimension reduction
+  + https://www.wired.com/insights/2013/04/big-data-fast-data-smart-data/
 
-+ PCA: 
++ Randomised algorithms
 
-	+ https://machinelearningmastery.com/principal-components-analysis-for-dimensionality-reduction-in-python/
-	+ https://www.analyticsvidhya.com/blog/2021/02/diminishing-the-dimensions-with-pca/
-	
-+ MDS:
-	
-	+ https://stats.stackexchange.com/questions/224383/learning-vector-embeddings-from-distances#:~:text=The%20method%20you're%20looking,as%20input%2C%20only%20pairwise%20distances.
-	+ https://medium.datadriveninvestor.com/the-multidimensional-scaling-mds-algorithm-for-dimensionality-reduction-9211f7fa5345
+  + https://brilliant.org/wiki/randomized-algorithms-overview/
+  + https://www.geeksforgeeks.org/randomized-algorithms-set-3-12-approximate-median/
 
-+ Word2vec
++ Recursion
 
-	+ https://jalammar.github.io/illustrated-word2vec/
-	
-	
-+ Transformers (optional)
+  + https://www.analog.com/media/en/technical-documentation/dsp-book/dsp_book_Ch19.pdf
+  + https://machinelearningmastery.com/an-introduction-to-recurrent-neural-networks-and-the-math-that-powers-them/
+  
 
-	+ https://jalammar.github.io/illustrated-transformer/
-
-		
- 
- 
