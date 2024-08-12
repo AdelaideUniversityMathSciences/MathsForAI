@@ -1,5 +1,10 @@
 # Week 7
 
+
+### Pre-reading
+
+I think it's useful to have read Section 7.1 of the [Bishop book on Deep Learning](https://www.bishopbook.com), about error surfaces and quadratic approximation, before this class. (No worries if you don't get a chance to though.)
+
 ### Topics
 
 1. Challenges of optimisation for neural nets
