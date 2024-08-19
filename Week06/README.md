@@ -1,6 +1,6 @@
-# Week 7
+# Week 6
 
-The Search for Spock. Sorry, no I meant the search for Sparstiy.
+The Search for Spock. Sorry, no I meant the search for Sparsity.
 
 ### Topics 
 
