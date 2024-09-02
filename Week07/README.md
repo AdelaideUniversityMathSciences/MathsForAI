@@ -1,5 +1,8 @@
 # Generalisation week: Sources of error and regularisation in deep learning
 
+### Pre-reading
+Bishop & Bishop, [Deep Learning](https://www.bishopbook.com) Section 1.2 on overfitting.
+
 ### Topics
 
 1. Sources of error in DL
